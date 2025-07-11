@@ -12,7 +12,6 @@ load_dotenv()
 # pip install fastapi uvicorn python-dotenv requests
 # Run the application with: uvicorn main:app --reload
 
-
 app = FastAPI()
 
 app.add_middleware(
