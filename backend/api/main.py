@@ -23,7 +23,7 @@ def get_clima():
         JSON response containing weather data.
     """
     # Example coordinates for Juiz de Fora, Brazil
-        
+    
     lat = "-21.76"
     lon = "-43.34"
     key = os.getenv("WEATHER_API_KEY")
