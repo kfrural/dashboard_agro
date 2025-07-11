@@ -19,9 +19,7 @@ app.add_middleware(
 def get_clima():
     """
     Fetches the current weather data for a specific location.
-    Returns:
-        JSON response containing weather data.
-    """
+    
     lat = "-21.76"
     lon = "-43.34"
     key = os.getenv("WEATHER_API_KEY")
