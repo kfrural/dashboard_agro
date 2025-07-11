@@ -9,7 +9,6 @@ load_dotenv()
 app = FastAPI()
 
 app.add_middleware(
-    
     CORSMiddleware,
     allow_origins=["*"],
     allow_methods=["*"],
@@ -17,6 +16,7 @@ app.add_middleware(
 )
 
 @app.get("/clima")
+
 def get_clima():
     lat = "-21.76"
     lon = "-43.34"
