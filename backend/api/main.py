@@ -10,6 +10,7 @@ load_dotenv()
 # It fetches weather data for a specific location using the OpenWeatherMap API.
 # Ensure you have the required packages installed:
 # pip install fastapi uvicorn python-dotenv requests
+# Run the application with: uvicorn main:app --reload
 
 app = FastAPI()
 
