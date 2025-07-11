@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 load_dotenv()
 # backend/api/main.py
 
-
 app = FastAPI()
 
 app.add_middleware(
