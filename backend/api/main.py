@@ -8,7 +8,6 @@ load_dotenv()
 # backend/api/main.py
 # This file is part of the OpenWeatherMap API integration for a FastAPI application.
 
-
 app = FastAPI()
 
 app.add_middleware(
