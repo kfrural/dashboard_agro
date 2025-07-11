@@ -10,7 +10,6 @@ load_dotenv()
 # It fetches weather data for a specific location using the OpenWeatherMap API.
 # Ensure you have the required packages installed:
 
-
 app = FastAPI()
 
 app.add_middleware(
