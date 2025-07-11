@@ -9,7 +9,6 @@ load_dotenv()
 # This file is part of the OpenWeatherMap API integration for a FastAPI application.
 # It fetches weather data for a specific location using the OpenWeatherMap API.
 
-
 app = FastAPI()
 
 app.add_middleware(
