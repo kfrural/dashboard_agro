@@ -3,6 +3,7 @@ from dash import html, dcc
 from src.utils import load_data
 from src.visualizations import grafico_producao_estado, grafico_tipo_cultura
 # app.py
+# app.py
 
 df = load_data()
 
