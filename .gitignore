@@ -1,6 +1,90 @@
+# Arquivos compilados Python
 *.pyc
 __pycache__/
+
+# Arquivos do Jupyter Notebook
 .ipynb_checkpoints/
+
+# Dados e ambiente
 data/
 .env
-.DS_Store
+.env.example
+
+# Sistema de arquivos virtuais Python
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Arquivos do sistema operacional
+.DS_Store    # Para macOS
+Thumbs.db    # Para Windows
+
+# Build e distribuição
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs e cache
+*.log
+*.tmp
+*.bak
+.local
+*.py[cod]
+*$py.class
+
+# IDEs e editores
+.vscode/
+.idea/
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Testes e cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Documentação Sphinx
+docs/_build/
+
+# Outros
+*.mo
+*.pot
+*.msg
+.mypy_cache/
+.dmypy.json
+dmypy.json
+*.py[cod]
+*$py.class
+.local
+*.ami
+*.pyz
+*.pyx.__checkpoints/__pychecker__/*
+.mplstyle
+.cellmagic.cache/
+*.directory
+*.ropeproject
+*_pycache_/
+*.sage.py
+.IPYNB_checkpoints/
+.profile
