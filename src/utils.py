@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load_data(path="data/producao_agropecuaria_100k.csv"):
+def load_data(path="data/raw/producao_agropecuaria.csv"):
     df = pd.read_csv(path)
     df['ano'] = df['ano'].astype(int)
     df['producao'] = pd.to_numeric(df['producao'], errors='coerce')
