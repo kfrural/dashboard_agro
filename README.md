@@ -1,14 +1,14 @@
 # 🌱 Projeto: Análise e Predição da Produção Agropecuária Brasileira
 
-Este projeto realiza a análise exploratória, tratamento, visualização e predição de dados agropecuários do Brasil.
-Utiliza dados do IBGE (simulados) e aplica conceitos de ciência de dados e aprendizado de máquina.
+Este projeto tem como objetivo impulsionar a tomada de decisão no setor agropecuário brasileiro por meio de análise de dados, visualização interativa e predição de produção. Utilizamos dados simulados do IBGE para investigar padrões, tendências e fatores que influenciam a produtividade agrícola.
 
-## Estrutura dos Notebooks
-- `1_data_exploration.ipynb`: Análise exploratória dos dados
-- `2_data_cleaning.ipynb`: Limpeza e tratamento
-- `3_visual_analysis.ipynb`: Visualizações
-- `4_feature_engineering.ipynb`: Criação de variáveis
-- `5_model_training.ipynb`: Treinamento de modelos
-- `6_model_evaluation.ipynb`: Avaliação de modelos
-- `7_prediction_interface.ipynb`: Interface preditiva
-- `8_summary_dashboard.ipynb`: Dashboard final interativo
+As principais tecnologias empregadas incluem Python, Jupyter Notebooks, bibliotecas de ciência de dados (Pandas, NumPy, Scikit-learn), visualização (Matplotlib, Seaborn, Plotly) e ferramentas de Big Data para manipulação eficiente de grandes volumes de dados. O projeto também explora técnicas de aprendizado de máquina para prever resultados futuros e identificar variáveis relevantes.
+
+Entre as análises realizadas estão:
+- Exploração e limpeza de dados agropecuários
+- Visualização de indicadores e tendências regionais
+- Engenharia de variáveis para aprimorar modelos preditivos
+- Treinamento e avaliação de algoritmos de machine learning
+- Construção de dashboards interativos para comunicação dos resultados
+
+O projeto busca apoiar pesquisadores, gestores e produtores rurais na compreensão dos dados e na antecipação de cenários, promovendo inovação e eficiência no setor agropecuário brasileiro. Através de insights baseados em dados, esperamos contribuir para o desenvolvimento sustentável e a competitividade da agroindústria no país.
