@@ -7,7 +7,6 @@ df = load_data()
 # app.py
 # Importando os dados e as funções de visualização
 
-
 app = dash.Dash(__name__)
 app.title = "Dashboard Agro"
 
