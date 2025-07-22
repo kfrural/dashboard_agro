@@ -4,7 +4,6 @@ from src.utils import load_data
 from src.visualizations import grafico_producao_estado, grafico_tipo_cultura
 # app.py
 
-
 df = load_data()
 
 app = dash.Dash(__name__)
