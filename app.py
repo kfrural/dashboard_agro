@@ -5,7 +5,7 @@ from src.visualizations import grafico_producao_estado, grafico_tipo_cultura
 
 df = load_data()
 # app.py
-# Importando os dados e as funções de visualização
+
 
 app = dash.Dash(__name__)
 app.title = "Dashboard Agro"
