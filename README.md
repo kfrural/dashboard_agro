@@ -17,7 +17,7 @@ Dashboard Agro is an innovative solution focused on the analysis, visualization,
 
 ## Analyses Performed
 
-- **Data Exploration and Cleaning**: Handling inconsistencies, filling missing values, and standardizing simulated IBGE data.
+- **Data Exploration and Cleaning**: Handling inconsistencies, filling missing values, and standardizing simulated data.
 - **Descriptive Analysis**: Identifying patterns, historical trends, and correlations between variables relevant to agricultural production.
 - **Feature Engineering**: Creating new attributes to enhance predictive model performance.
 - **Predictive Modeling**: Applying machine learning algorithms to forecast future production, identify risk factors, and highlight improvement opportunities.
