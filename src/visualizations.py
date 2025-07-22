@@ -13,7 +13,7 @@ def grafico_producao_estado(df):
 def grafico_tipo_cultura(df):
     fig = px.pie(
         df,
-        names="tipo_cultura",
+        names="produto",
         values="producao_toneladas",
         title="Distribuição por Tipo de Cultura"
     )
