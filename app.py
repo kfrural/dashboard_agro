@@ -1,7 +1,7 @@
 import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
-from utils.utils import load_data, estados_disponiveis, filtrar_por_estado
+from utils import load_data, estados_disponiveis, filtrar_por_estado
 
 # Carregar dados
 df = load_data()
