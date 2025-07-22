@@ -2,11 +2,11 @@ import plotly.express as px
 
 def grafico_producao_estado(df):
     fig = px.bar(
-        df.groupby("estado")["quantidade_produzida"].sum().reset_index(),
+        df.groupby("estado")["producao_toneladas"].sum().reset_index(),
         x="estado",
-        y="quantidade_produzida",
+        y="producao_toneladas",
         title="Produção por Estado",
-        labels={"quantidade_produzida": "Produção (toneladas)"},
+        labels={"producao_toneladas": "Produção (toneladas)"},
     )
     return fig
 
@@ -14,7 +14,7 @@ def grafico_tipo_cultura(df):
     fig = px.pie(
         df,
         names="tipo_cultura",
-        values="quantidade_produzida",
+        values="producao_toneladas",
         title="Distribuição por Tipo de Cultura"
     )
     return fig
