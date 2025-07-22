@@ -1,32 +1,16 @@
 import pandas as pd
 
-def load_data(file_path: str) -> pd.DataFrame:
-    """Carrega os dados a partir de um arquivo CSV."""
-    return pd.read_csv(file_path)
-
-def check_missing_data(df: pd.DataFrame) -> pd.Series:
-    """Retorna a contagem de valores ausentes por coluna."""
-    return df.isnull().sum()
-
-def clean_data(df: pd.DataFrame) -> pd.DataFrame:
-    """Limpa os dados, removendo ou preenchendo valores faltantes e corrigindo anomalias."""
-    df = df.dropna(subset=['producao_toneladas'])  # remove registros com produção ausente
-    df['estado'] = df['estado'].str.upper()
+def load_data(path="data/producao_agropecuaria_100k.csv"):
+    df = pd.read_csv(path)
+    df['ano'] = df['ano'].astype(int)
+    df['producao'] = pd.to_numeric(df['producao'], errors='coerce')
     return df
 
-def get_summary_statistics(df: pd.DataFrame) -> pd.DataFrame:
-    """Retorna estatísticas descritivas por produto."""
-    return df.groupby('produto')['producao_toneladas'].describe()
+def resumo_estatistico(df):
+    return df.describe(include='all')
 
-def filter_by_state(df: pd.DataFrame, estado: str) -> pd.DataFrame:
-    """Filtra os dados por estado."""
-    return df[df['estado'] == estado.upper()]
+def estados_disponiveis(df):
+    return df['estado'].unique()
 
-def filter_by_year(df: pd.DataFrame, ano: int) -> pd.DataFrame:
-    """Filtra os dados por ano."""
-    return df[df['ano'] == ano]
-
-def convert_to_tonnes(df: pd.DataFrame, column: str = 'producao_toneladas') -> pd.DataFrame:
-    """Converte a produção para toneladas, se necessário (exemplo)."""
-    df[column] = df[column] / 1000  # caso os dados estejam em kg
-    return df
+def filtrar_por_estado(df, estado):
+    return df[df['estado'] == estado]
